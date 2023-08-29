@@ -51,7 +51,7 @@
     align-items: center;
     padding: 0.25rem;
     margin-bottom: 3rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     /* background-color: var(--lm-bg-content); */
     border-radius: 10px;
   }
@@ -329,12 +329,36 @@
     padding-right:0;
     }
 
+    .heading-container{
+        padding-left: 1rem;
+    }
+
+    .user-name-username{
+        gap: 0.3rem;
+    }
+
+    .user-date p{
+        margin-top: 0.4rem;
+    }
+
+    .label{
+        /* margin:0 0.2rem; */
+        padding: 0 0.2rem;
+    }
+
+    .user-github-details{
+        padding-top:1.2rem;
+        padding-left:1rem;
+        padding-right:1rem;
+        padding-bottom: 1.5rem;
+    }
+
   }
 
 
   
 
-  @media only screen and (max-width: 450px) {
+  @media only screen and (max-width: 450px) and (min-width: 287px){
     
     
     h1{
@@ -346,18 +370,13 @@
         flex-direction: column;
     }
     
-    .user-date p{
-        margin: 0.7rem;
-        color:  var(--lm-text);
-        font-size: 0.9rem;
-    }
 
     .error-message{
         right: 0.2rem;
     }
 
     .search-container .btn{
-        background-color: aqua;
+        background-color: var(--btn);
         padding: 0rem;
         font-size: 1rem;
         width:20%;
