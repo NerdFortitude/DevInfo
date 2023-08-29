@@ -376,7 +376,6 @@
     }
 
     .search-container .btn{
-        background-color: var(--btn);
         padding: 0rem;
         font-size: 1rem;
         width:20%;
