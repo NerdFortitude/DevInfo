@@ -12,13 +12,23 @@ const twitterData = document.querySelector('[twitter]');
 const companyData = document.querySelector('[company]');
 const SearchButton = document.querySelector('.btn');
 const SearchInput = document.querySelector('[search-input]');
+const errorMessage = document.querySelector('.error-message');
+
 
 async function fetchUserData(user){
-    try{ 
-          
+    try{  
     const response = await fetch(`https://api.github.com/users/${user}`);
-   const data = await response.json();
+    const data = await response.json();
+   if(data?.message == "Not Found"){
+     errorMessage.classList.add('error-message-active');
+     errorMessage.innerText = "User does not exists";
+     setTimeout(()=>{
+     errorMessage.classList.remove('error-message-active');
+     },3000);
+   }
+   else{
    renderUserData(data);
+   }
     }
     catch(e){
         console.log(e);
@@ -26,7 +36,18 @@ async function fetchUserData(user){
 }
 
 SearchButton.addEventListener('click',()=>{
-    fetchUserData(SearchInput.value);
+
+    if(SearchInput.value == ""){
+        errorMessage.classList.add('error-message-active');
+        errorMessage.innerText = "Please enter a username";
+        setTimeout(()=>{
+            errorMessage.classList.remove('error-message-active');
+            },3000);
+    }
+    else{
+        fetchUserData(SearchInput.value);
+    }
+    
 });
 
 
