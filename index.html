@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 </head>
 <body>
 
@@ -21,7 +27,7 @@
 
             <div class="search-container">
                    <img src="./Images/search-icon.svg" class="search-icon">
-                   <input type="text" class="search-input" placeholder="Enter a Github username...">
+                   <input type="text" class="search-input" placeholder="Enter a Github username..." search-input>
                    <button class="btn">Search</button>
             </div>
 
@@ -30,22 +36,22 @@
 
                  <div class="user-info">
                        <div class="user-profile">
-                           <img src="./Images/93965871.jpeg" alt="">
+                           <img src="./Images/93965871.jpeg" alt="" profile-photo>
                            <div class="user-name-username">
-                                  <p>Nishant Rai</p>
-                                  <a href="#">@NerdFortitude</a>
+                                  <p user-name>Nishant Rai</p>
+                                  <a href="#" target="_blank" profile-link>@NerdFortitude</a>
                            </div>
                        </div>
 
                        <div class="user-date">
 
-                              <p>Joined 09 November 2021</p>
+                              <p user-join-date>Joined 09 November 2021</p>
 
                        </div>
                  </div>
 
                  <div class="user-bio">
-                      <p>This Profile has no Bio</p>
+                      <p profile-bio>This Profile has no Bio</p>
 
                  </div>
 
@@ -53,17 +59,17 @@
                       
                     <div class="repos">
                         <p class="label">Repos</p>
-                        <p class="data">30</p>
+                        <p class="data" repo-data>30</p>
                     </div>
 
                     <div class="Followers">
                         <p class="label">Followers</p>
-                        <p class="data">65</p>
+                        <p class="data" follower-data>65</p>
                     </div>
 
                     <div class="Following">
                          <p class="label">Following</p>
-                         <p class="data">0</p>
+                         <p class="data" following-data>0</p>
                     </div>
 
 
@@ -75,12 +81,12 @@
                          
                         <div class="social">
                             <img src="./Images/location-icon.svg" alt="">
-                            <a href="">Not Available</a>
+                            <a href="#" target="_blank" location>Not Available</a>
                         </div>
 
                         <div class="social">
                             <img src="./Images/website-icon.svg" alt="">
-                            <a href="">Not Available</a>
+                            <a href="#" target="_blank" website>Not Available</a>
                         </div>
                           
                     </div>
@@ -88,12 +94,12 @@
                     <div class="social-link-section-2">
                         <div class="social">
                             <img src="./Images/twitter-icon.svg" alt="">
-                            <a href="">Not Available</a>
+                            <a href="#" target="_blank" twitter>Not Available</a>
                         </div>
 
                         <div class="social">
                             <img src="./Images/company-icon.svg" alt="">
-                            <a href="">Not Available</a>
+                            <a href="$" target="_blank" company>Not Available</a>
                         </div>
 
 
@@ -109,6 +115,6 @@
 
 
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>

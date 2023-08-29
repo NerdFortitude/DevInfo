@@ -19,8 +19,8 @@
     padding: 0;
     box-sizing: border-box;
     color: var(--lm-bg);
-
-    font-family: monospace;
+    /* font-family: monospace; */
+    font-family: 'Space Mono', monospace;
    
   }
 
@@ -100,7 +100,7 @@
 
 .search-container .btn{
     all: unset;
-    width: 13%;
+    width: 14%;
     height: 100%;
     border-radius: 5px;
     margin-right: 0.3rem;
@@ -109,7 +109,7 @@
     text-align: center;
     margin-left: 0;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .search-container .search-input{
@@ -173,14 +173,14 @@
 
 .user-name-username a{
     color:var(--btn);
-    font-size: 1.15rem;
+    font-size: 0.8rem;
 }
 
 
 
 .user-date p{
     color:  var(--lm-text);
-    font-size: 1.09rem;
+    font-size: 0.9rem;
 }
 
 .user-bio{
@@ -290,6 +290,26 @@
     padding-top:0;
     padding-left:0;
     padding-right:0;
+    }
+
+  }
+
+
+  @media only screen and (max-width: 450px) {
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    
+    .user-info{
+        flex-direction: column;
+    }
+    
+    .user-date p{
+        margin: 0.7rem;
+        color:  var(--lm-text);
+        font-size: 0.9rem;
     }
 
   }
