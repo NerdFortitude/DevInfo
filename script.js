@@ -1,3 +1,4 @@
+const wrapper = document.querySelector(".wrapper");
 const profilePhoto = document.querySelector('[profile-photo]');
 const userName = document.querySelector('[user-name]');
 const profileLink = document.querySelector('[profile-link]');
@@ -13,7 +14,31 @@ const companyData = document.querySelector('[company]');
 const SearchButton = document.querySelector('.btn');
 const SearchInput = document.querySelector('[search-input]');
 const errorMessage = document.querySelector('.error-message');
+const theme = document.querySelector(".theme-icon");
+const themeInfo = document.querySelector(".theme-info");
 
+console.log(theme);
+
+let islight = true;
+theme.addEventListener("click",()=>{
+       
+    console.log("hello");
+    wrapper.classList.toggle("dark-wrapper");
+    SearchButton.classList.toggle("dark-btn");
+
+    if(islight){
+        theme.src = "./images/sun-icon.svg";
+        themeInfo.innerText = "LIGHT";
+        islight = false;
+    }
+    else{
+        theme.src = "./images/moon-icon.svg";
+        themeInfo.innerText = "DARK";
+        islight = true;
+    }
+
+
+})
 
 async function fetchUserData(user){
     try{  

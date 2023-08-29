@@ -34,7 +34,7 @@
     /* align-items: center; */
     background-color: var(--lm-bg);
     font-size: 13px;
-    
+    transition: all 0.6s linear;
   }
 
   .container{
@@ -282,6 +282,20 @@
 
 .error-message-active{
     scale:1;
+    
+}
+
+.dark-heading h1{
+     color: white;
+
+}
+
+.dark-wrapper{
+    background-color: var(--lm-text-alt);
+  }
+
+.btn.dark-btn{
+    background-color: #0d2643;
 }
 
 
@@ -317,6 +331,8 @@
 
   }
 
+
+  
 
   @media only screen and (max-width: 450px) {
 
